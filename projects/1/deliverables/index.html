@@ -1,8 +1,63 @@
 <html>
 <head>
 	<title>About me page</title>
+	
 </head>
 <body>
+	<h1>About Me Page</h1>
+	<h2>About Me Page</h2>
+	<h3>About Me Page</h3>
+
+
+	<p> Parargraph tab</p>
+
+	<ul>
+		<li> list item 1 </li>
+		<li> list item 2 </li>
+
+	</ul>
+
+	<ol>
+		<li> list item 1</li>
+		<li> list item 2</li>
+		<li> list item 3</li>
+
+		
+	</ol>
+
+
+
+
+
+	<form id="sayHi">
+		<input id="firstname" type="text"name="firstname">
+		<input type="submit" value="submit">
+	</form>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+
+			$("#sayHi").on("submit", function (e) {
+
+
+
+			 e.preventDefault();
+
+			 var firstName = $("#firstname").val();
+
+			 alert("Hello, " + firstName);
+
+			});
+
+
+		});
+
+	</script>
+
+
+
 
 </body>
 </html>
