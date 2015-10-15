@@ -46,7 +46,7 @@ The landing page must include the following elements on it:
     * `checkbox` Ask a question with multiple answers.
       * _example_ Pick your 3 fav colors: (HINT: Use checkbox buttons)
 
->>>>>>> upstream/master
+
 
 #### Example Project:
 In the **example** folder within this project directory, you can see a finished example of what you will be creating in this section.
@@ -57,10 +57,10 @@ In the **example** folder within this project directory, you can see a finished 
 Please make sure all of your work is created within the **deliverables folder**.
 
 #### Topics Covered:
-<<<<<<< HEAD
+
 =======
 1. HTML
 2. CSS
 3. Javascript
->>>>>>> upstream/master
+
 
