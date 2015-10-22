@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
+<bodybackground="assets/images/backgroung.jpg">
 <head>
-	<title>Project 3: Landing Page: My Awesome Yo-Yo</title>
+	<title>Project 3: Landing Page: My Dream Watch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="assets/css/style_bootstrap.css">
+	<link rel="stylesheet" type="assets/css/style_bootstrap" 
 </head>
-<body>
 
 	<header>
 		
-		<img src="assets/images/header_1.png">
+		<img src="assets/images/headerimg.jpg">
 
 	</header>
 
@@ -23,17 +23,17 @@
 
 			<div class="column" style="width:580px">
 				<!-- Heading -->
-				<h1>My Super Awesome Yo-Yo</h1>
+				<h1>My Dream Watch</h1>
 				<!-- Image -->
-				<img class="yoyoImg" src="assets/images/yoyo.png">
+				<img class="WatchImg" src="assets/images/DreamWatch.jpg">
 
 				<!-- Paragraph -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut efficitur ipsum, eu mollis tellus. Nunc mollis purus a eros viverra, eu viverra quam consectetur. Suspendisse eleifend id sapien nec porta.</p>
+				<p>This here is watch that I have loved for years. I saw my dad working with it many years ago and I have not been able to get it out of my head. Unfortunately this might be something that always remains a dream.</p>
 			</div>
 
 			<div class="column" style="width:380px">
 				<!-- Sub-Heading -->
-				<h2>Get more information about my Yo-Yo</h2>
+				<h2>Get more information about my Watch</h2>
 				<!-- CTA FORM -->
 				<form id="cta">
 					<input class="tf name no-margin" type="text" name="firstname" placeholder="First name">
@@ -62,7 +62,7 @@
 
 					<!-- <input type="date"> -->
 
-					<label>Are you over 35?</label>
+					<label>Are you over 25?</label>
 					<input type="radio" name="over21" value="yes">Yes
 					<input type="radio" name="over21" value="no">No
 
@@ -70,7 +70,7 @@
 
 					<label>Select all of the colors you like:</label>
 					<input type="checkbox" name="favColors" value="red">Red
-					<input type="checkbox" name="favColors" value="blue">Blue
+					<input type="checkbox" name="favColors" value="blue">Gold
 					<input type="checkbox" name="favColors" value="green">Green
 
 					<br>
@@ -118,19 +118,15 @@
 
 	<script type="text/javascript">
 	$(function(){
-
 		var minYear = new Date().getFullYear() - 18,
 		    day = $('select[name="day"]'),
 		    year = $('select[name="year"]');
-
 		for(var i = 1; i <= 31; i++){
 			day.append( $("<option></option>").attr("value", i).text(i) );
 		};
-
 		for( ; minYear >= 1920; minYear--){
 			year.append( $("<option></option>").attr("value", minYear).text(minYear) );
 		};
-
 	});
 	</script>
 </body>
