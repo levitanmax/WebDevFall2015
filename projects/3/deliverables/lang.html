@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 3: Landing Page---[Bootstrapped]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+​
+</head>
+<body>
+​
+	<header>
+         <img class="img-responsive" src="assets/Image/coverpicture.png" style="width:100%;">		
+​
+	</header>
+​
+    <div class="container-fluid">
+	<content>	
+         <div class="row">
+​
+         	    <div class="col-md-8 col-sm-8 col-xs-12">
+         	  	   <h1>Protector Generation 1</h1>
+                   <img class="img-responsive main-image" src="assets/Image/Protector.jpg">
+                
+                    <p>The Protector is a wearable device to alarm you whenever your personal stuff is missing. It's based on RFID connection. 
+                     </p>   
+                </div>
+​
+                
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                   <h2>Get more information about the Protector</h2>
+                   <form id="cta">
+                        <input class="tf name no-margin" type="text" name="firstname" placeholder="first Name">
+                        <input class="tf name no-margin" type="text" name="lastname" placeholder="Last Name">
+                        <input class="tf name no-margin" type="email" name="emailadress" placeholder="Email address">
+​
+                        <label>Date of Birth</label>
+                        <select name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select> / 
+                        <select name="day"></select> /
+                        <select name="year"></select>
+                        <format>month/day/year</format>
+​
+​
+                        <label>Are you student?</label>
+                        <input type="radio" name="Student" value="Student">Student
+                        <input type="radio" name="Not student" value="Not student">Not student
+                            
+                        <br>
+                        
+                        <label>Select all of items you have lost before:</label>
+                        <input type="checkbox" name="Lost item" value="Smartphone">Smartphone
+                        <input type="checkbox" name="Lost item" value="Keys">Keys
+                        <input type="checkbox" name="Lost item" value="Paperwork">Paperwork
+                        <input type="checkbox" name="Lost item" value="Paperwork">Paperwork
+                        <input type="checkbox" name="Lost item" value="Sunglasses">Sunglasses
+                        <input type="checkbox" name="Lost item" value="Purse/Wallet">Purse/Wallet
+                        <input type="checkbox" name="Lost item" value="Gloves">Gloves
+                        <input type="checkbox" name="Lost item" value="Clothing">Clothing
+                        <input type="checkbox" name="Lost item" value="Umbrella">Umbrella
+                        <input type="checkbox" name="Lost item" value="Book">Book
+                        <input type="checkbox" name="Lost item" value="Laptop">Laptop
+                        <input type="checkbox" name="Lost item" value="Bank card">Bank card
+                        
+                        <br>
+​
+​
+                        <input class="submitBtn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+​
+​
+        </div>
+            <div class="row">
+​
+            <ul>
+                <li>
+                    <img class="img-responsive thumbs" src="assets/Image/9uYs8YO.png">
+                    Feature 1
+                    <p>Prevent people to steal your iPhone</p>
+                </li>
+                <li>
+                    <img class="img-responsive thumbs" src="assets/Image/iphone-stolen.jpg">
+                    Feature 2
+                    <p>Prevent people to steal your wallte</p>
+                </li>
+                <li>
+                    <img class="img-responsive thumbs" src="assets/Image/pick-pocket_1895306b.jpg">Feature 3
+                    <p>Prevent people to steal your purse</p>
+                </li>
+            </ul>
+            </div>
+        <div>
+    </content>
+    </div>
+​
+    <footer>
+        
+    </footer>
+​
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+​
+    <script type="text/javascript">
+    $(function(){
+​
+        var minYear = new Date().getFullYear() - 10,
+            day = $('select[name="day"]'),
+            year = $('select[name="year"]');
+​
+        for(var i = 1; i <= 31; i++){
+            day.append( $("<option></option>").attr("value", i).text(i) );
+        };
+​
+        for( ; minYear >= 1949; minYear--){
+            year.append( $("<option></option>").attr("value", minYear).text(minYear) );
+        };
+​
+    });
+    </script>
+​
+​
+​
+</body>
+</html>ß

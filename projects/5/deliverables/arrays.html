@@ -13,7 +13,7 @@
 
   <script type="text/javascript">
 
-    describe('Array\'s', function(){
+    describe("Array's", function(){
 
       it("array literal syntax and indexing", function() {
           var favouriteThings = ["cellar door", 42, true]; // note that array elements do not have to be of the same type
@@ -60,7 +60,7 @@
           expect(queue.length).toEqual(3) // what will be the length of the queue array?
           expect(queue.shift()).toEqual("third") // what will be shifted out first?
           expect(queue.shift()).toEqual("first")  // what will be shifted out second?
-          
+          expect(queue.length).toEqual(1) // what will be the length of the queue array?
       });
 
     });
